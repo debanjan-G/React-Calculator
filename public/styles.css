@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #001c30, #3f2305);
+}
+.heading {
+  font-family: "Pangolin", cursive;
+  text-align: center;
+  color: #fff6f4;
+}
+.calc-grid {
+  display: grid;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 4rem);
+  justify-content: center;
+  grid-template-rows: minmax(6rem, auto) repeat(5, 4rem);
+}
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: span 4;
+  background-color: #dafffb;
+  color: #001c30;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 1rem;
+  /* word-wrap: break-word; */
+  word-break: break-word;
+  /* border-radius: 10px; */
+}
+.previous-screen {
+  font-size: 1rem;
+}
+.current-screen {
+  font-size: 3rem;
+}
+button {
+  background: #fff6f4;
+  background-image: -webkit-linear-gradient(top, #fff6f4, #ffeadd);
+  background-image: -moz-linear-gradient(top, #fff6f4, #ffeadd);
+  background-image: -ms-linear-gradient(top, #fff6f4, #ffeadd);
+  background-image: -o-linear-gradient(top, #fff6f4, #ffeadd);
+  background-image: linear-gradient(to bottom, #fff6f4, #ffeadd);
+  /* -webkit-border-radius: 10;
+  -moz-border-radius: 10; */
+  /* border-radius: 10px; */
+  font-family: Courier New;
+  color: black;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  border: 1px solid grey;
+}
+
+button:hover {
+  background: #a2ff86;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer {
+  margin-top: 8rem;
+  text-align: center;
+  color: #dafffb;
+  opacity: 0.5;
+}
